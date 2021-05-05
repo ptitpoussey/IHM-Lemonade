@@ -30,11 +30,15 @@ body {
     display: flex;
     margin-left: 5em;
     align-items: center;
+	background-color: #f7ed01;
+	opacity: 60%;
 }
 
 .navbar h4{
     margin-left: 15em;
     margin-right: 4em;
+	opacity: 100%;
+
 }
 
 .navbar a{
@@ -199,7 +203,6 @@ body {
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-duration: 18s;
-	animation-direction: forwards;
 	object-fit: cover;
 }
 
@@ -208,7 +211,6 @@ body {
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-duration: 18s;
-	animation-direction: forwards;
 	object-fit: cover;
 }
 
@@ -217,6 +219,5 @@ body {
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-duration: 18s;
-	animation-direction: forwards;
 	object-fit: cover;
 }
