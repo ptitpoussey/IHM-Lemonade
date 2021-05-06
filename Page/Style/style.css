@@ -1,0 +1,244 @@
+
+/*html, div, h1, h2, h3, h4, h5, h6, p, blockquote, a, img, ol, ul, li, table, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav {
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+    font-size: 100%;
+    line-height: 1;
+    font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}*/
+
+/*Custom CSS*/
+
+*{
+	font-family: 'lemonade_font';
+	src: url('lemonade_font.ttf');
+	font-size: 18px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+	background: url(/Page/media/imageObligatoire.jpg);
+}
+
+.container{
+    display: flex;
+}
+
+#test{
+    align-items: flex-end;
+}
+
+.navbar h4{
+    margin-left: 10em;
+    margin-right: 3em;
+	opacity: 100%;
+}
+
+.navbar h4:hover{
+	background-color: hsla(36, 100%, 50%, 0.1);
+}
+
+.navbar{
+    display: flex;
+    margin-left: 5em;
+	margin-right: 5em;
+    align-items: center;
+	background-color: hsla(36, 100%, 50%, 0.3);
+	border-radius: 15px;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+.navbar img{
+	margin-left: 2em;
+    width: 5%;
+    height: 8.5%;
+}
+
+#slider {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	min-height: 20.5rem;
+	border: 4px solid black;
+	box-shadow: 0px 8px 10px 8px grey;
+   width: 1700px;
+   margin: 3% 10% 0 10%;
+   background-color: black;
+}	
+
+#slider img {
+	position: absolute;
+	width: 1700px;
+	height: 20.5rem;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+@keyframes parallax_one { /* controls img.one movement */
+	0% { /* .imageloaded */
+		height: 37.5rem;
+		width: 1700px;
+		left: 0rem;
+		opacity: 1;
+	}
+	/* .imagehold runs from 0 to 27.77% */
+	27.77% { /* .imageloaded */
+		width: 1700px;
+		left: 0rem;
+	}
+	27.78% { /* .imagepreunload */
+		width: 1700px;
+		left: 0rem;
+		right: 50rem;
+	}
+	33.33% { /* .imageunloaded */
+		height: 37.5rem;
+		width: 0rem;
+		left: 0rem;
+		right: 0rem;
+		opacity: 1;
+	}
+	33.34% { /* imageoff */
+		opacity: 0;	
+	}
+	94.43% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	94.44% { /* .imageinitial */
+		height: 37.5rem;
+		width: 0rem;
+		left: 50rem;
+		opacity: 1;
+	}
+	100% { /* .imageloaded */
+		width: 1700px;
+		left: 0rem;
+		opacity: 1;		
+	}
+}
+
+@keyframes parallax_two { /* controls img.two movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	27.77% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	27.78% { /* .imageinitial */
+		width: 0rem;
+		height: 37.5rem;
+		left: 50rem;
+		opacity: 1;
+	}
+	33.33% { /* .imageloaded */
+		width: 1700px;
+		left: 0rem;
+	}
+	/* .imagehold runs from 33.34% - 61.10% */
+	61.10%{ /* .imageloaded */
+		width: 1700px;
+		left: 0rem;
+	}
+	61.11% { /* .imagepreunload */
+		width: 1700px;
+		left: 0rem;
+		right: 50rem;
+	}
+	66.67% { /* .imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 37.5rem;
+		opacity: 1;
+	}
+	66.68% { /* .imageoff */
+		opacity: 0;
+	}
+	100% { /* .imageoff */
+		opacity: 0;
+	}
+}
+
+@keyframes parallax_three { /* controls img.three movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	61.10%{ /* .imageon */
+		opacity: 0;
+	}
+	61.11% { /* .imageinitial */
+		width: 0rem;
+		height: 37.5rem;
+		left: 50rem;
+		opacity: 1;		
+	}
+	66.67% { /* .imageloaded */
+		width: 1700px;
+		left: 0rem;
+	}
+	/* .imagehold runs from 66.67% - 94.43% */
+	94.43% { /* .imageloaded */
+		width: 1700px;
+		left: 0rem;
+	}
+	94.44% { /* .imagepreunload */
+		width: 1700px;
+		left: 0rem;
+		right: 50rem;
+	}
+	100% { /* imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 37.5rem;
+		opacity: 1;
+	}
+}
+
+#slider img.one{
+	animation-name: parallax_one; /* controls img.one movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	object-fit: cover;
+}
+
+#slider img.two {
+	animation-name: parallax_two; /* controls img.two movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	object-fit: cover;
+}
+
+#slider img.three {
+	animation-name: parallax_three; /* controls img.three movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	object-fit: cover;
+}
+
+.articles img{
+	text-align: center;
+	margin: auto;
+	display: flex;
+}
+
+.map{
+	margin: 2em 2em 2em 2em;
+}
