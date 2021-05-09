@@ -14,7 +14,7 @@
 
 *{
 	font-family: 'lemonade_font';
-	src: url('lemonade_font.ttf');
+	src: url('/Style/lemonade_font.ttf');
 	font-size: 18px;
 }
 
@@ -247,4 +247,90 @@ body {
 .map{
 	text-align: center;
 	margin: 2em 2em 2em 2em;
+}
+
+footer hr{
+	border: 1px black solid;
+	margin-right: 5em;
+	margin-left: 5em;
+}
+
+.footer img{
+	width: 30px;
+	height: 30px;
+	align-items: center;
+}
+
+.footer{
+	font-size: 13px;
+	margin-right: 10em;
+	margin-left: 10em;
+	justify-items: center;
+}
+
+footer .leftfooter{
+	color: #70757a;
+    text-decoration: none;
+}
+
+footer .secondpart{
+    display: flex;
+}
+footer .secondpart ul#menu li{
+    display: inline;
+}
+
+footer .secondpart ul#menu li{
+    padding-right: 2em;
+}
+
+footer .secondpart .centerfooter > img{
+	width: 22px;
+	height: 22px;
+	margin-right: 3em;
+}
+
+footer .secondpart .centerfooter > img#img2{
+	width: 30px;
+	height: 33px;
+}
+
+footer .secondpart .centerfooter{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-right: 28em;
+}
+
+footer .secondpart .centerfooter > img:hover{
+	width: 30px;
+	height: 30px;
+    box-shadow: 0 0 5px 0.2px;
+}
+footer .secondpart .centerfooter > img#img2:hover{
+	width: 42px;
+	height: 42px;
+}
+footer .secondpart .centerfooter > a {
+    color: #70757a;
+    text-decoration: none;
+}
+
+footer .secondpart .centerfooter > a:hover{
+    text-decoration: underline;
+}
+
+footer .secondpart .centerfooter > a:active{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+footer .secondpart ul#menu li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
+
+footer .secondpart ul#menu li a:hover{
+    text-decoration: underline;
 }
