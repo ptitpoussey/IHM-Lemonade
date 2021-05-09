@@ -21,7 +21,7 @@
 body {
     width: 100%;
     height: 100%;
-	background: url(/IHM-Lemonade/media/imageObligatoire.jpg);
+	background-image: url("../media/imageObligatoire.png");
 }
 
 .container{
@@ -29,8 +29,8 @@ body {
 }
 
 .navbar h4{
-    margin-left: 10em;
-    margin-right: 3em;
+    margin-left: 10%;
+    margin-right: 3%;
 	opacity: 100%;
 }
 
@@ -40,11 +40,12 @@ body {
 
 .navbar{
     display: flex;
-    margin-left: 5em;
-	margin-right: 5em;
+    margin-left: 5%;
+	margin-right: 5%;
     align-items: center;
 	background-color: hsla(36, 100%, 50%, 0.3);
 	border-radius: 15px;
+	width: 90%;
 }
 
 .navbar a{
@@ -53,7 +54,7 @@ body {
 }
 
 .navbar img{
-	margin-left: 2em;
+	margin-left: 2%;
     width: 5%;
     height: 8.5%;
 }
@@ -65,8 +66,8 @@ body {
 	min-height: 12rem;
 	border: 4px solid black;
 	box-shadow: 0px 8px 10px 8px grey;
-	width: 1000px;
-	margin: 3% 10% 0 17%;
+	width: 65%;
+	margin: 5% 17.5% 5% 17.5%;
 	background-color: black;
 }	
 
@@ -224,22 +225,58 @@ body {
 }
 
 .articles{
-	margin-top: 4em;
+	margin: 5% 5% 5% 15%;
 	display: flex;
+	flex-direction: column;
+	width: 70%;
 }
 
 .article1{
-	width: 400px;
-	height: 400px;
 	margin: auto;
-	background-color: red;
+	display: flex;
+	flex-direction: row;
+	background-color: hsla(36, 100%, 50%, 0.3);
+
+}
+
+.article1 img {
+	margin-left: 10%;
+	width: 30%;
+	height: 30%;
+	border-radius: 2%;
+}
+
+.article1 p{
+	width: 50%;
+	padding-left: 1.5%;
 }
 
 .article2{
-	width: 400px;
-	height: 400px;
 	margin: auto;
-	background-color: red;
+	flex-direction: row;
+	background-color: hsla(36, 100%, 50%, 0.3);
+
+}
+
+.article2{
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	background-color: hsla(36, 100%, 50%, 0.3);
+
+}
+
+.article2 img {
+	margin-left: 10%;
+	width: 30%;
+	height: 30%;
+	border-radius: 2%;
+}
+
+.article2 p {
+	width: 50%;
+	padding-left: 1.5%;
+
 }
 
 .map{
@@ -331,4 +368,5 @@ footer .secondpart ul#menu li a{
 
 footer .secondpart ul#menu li a:hover{
     text-decoration: underline;
+	margin-left: 50px;
 }
