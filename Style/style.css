@@ -442,69 +442,104 @@ footer .secondpart ul#menu li a:hover{
 
 @media only screen and (max-width: 768px) {
 
-	.navbar img{
+	.navbar img {
 		width: 20%;
 		height: 20%;
 	}
 
-	.navbar h4{
+	.navbar h4 {
 		font-size: 80%;
 		margin-left: 5%;
 		margin-right: 1.5%;
 		opacity: 100%;
 	}
 
-	.articles{
+	.articles {
 		margin: 5%;
 		width: 90%;
 	}
 
-	.articles p{
+	.articles p {
 		font-size: 100%;
 	}
 
-	#carteMap{
+	#carteMap {
 		width: 70%;
 		margin: 15%;
 		height: 20%;
 	}
 
 
-	.map p{
+	.map p {
 		font-size: 100%;
 		width: 50%;
 	}
 
-	.formulaire p{
+	.formulaire p {
 		font-size: 100%;
 		width: 90%;
 	}
 
-	.footer{
+	.footer {
 		width: 100%;
 	}
 
-	.footer p{
+	.footer p {
 		margin-left: 0%;
 		font-size: 80%;
 	}
 
-	.leftfooter{
+	.leftfooter {
 		width: 100%;
 		margin-left: 0%;
 	}
 
-	.centerfooter{
+	.centerfooter {
 		margin: 0%;
 	}
-	.secondpart{
+
+	.secondpart {
 		width: 50%;
 		margin-left: 0%;
 	}
 
-	#menu{
+	#menu {
 		display: none;
 	}
 
 }
+	@media only screen  and (max-width: 1280px) and (min-width: 768px){
+
+		.formulaire{
+			width: 40%;
+			margin: 2.5%;
+		}
+
+		.map{
+			width: 40%;
+			margin: 2.5%;
+		}
+		.map p{
+			/*font-size: 120%;*/
+			width: 100%;
+			margin: 0% 0% 2.5%;
+		}
+
+		#bloc{
+			display: flex;
+			flex-direction: row;
+		}
+
+		#formImgInput img{
+			height: 40%;
+			width: 40%;
+		}
+
+		.leftfooter {
+			margin-left: 70%;
+			width: 30%;
+		}
+
+	}
+
 
