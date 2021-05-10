@@ -25,6 +25,14 @@ h2{
  font-family: lemonade_font ;
 }
 
+input{
+	font-family: lemonade_font;
+}
+
+select{
+	font-family: lemonade_font;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -306,12 +314,44 @@ hr{
 	margin: 5%;
 }
 
-form{
+.formulaire{
 	display: flex;
 	flex-direction: column;
-	width: 10%;
+	justify-content: center;
+
 }
 
+.formulaire p{
+	background-color: hsla(36, 100%, 50%, 0.3);
+	font-size: 150%;
+	margin-left: 20%;
+	width: 60%;
+}
+
+form{
+	width: 25%;
+	margin-left: 5%
+}
+
+#formImgInput{
+	display: flex;
+	flex-direction: row;
+}
+
+#formImgInput img{
+	width: 25%;
+	height: 20%;
+	margin-left: 20%;
+}
+
+form input{
+	border-radius: 12%;
+}
+
+#boutton{
+	margin-top: 20%;
+	margin-left: 25%;
+}
 
 footer hr{
 	margin-right: 5%;
@@ -320,9 +360,10 @@ footer hr{
 
 
 
+
 .footer img{
-	width: 30px;
-	height: 30px;
+	width: 5%;
+	height: 5%;
 	align-items: center;
 }
 

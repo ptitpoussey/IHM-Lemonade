@@ -43,42 +43,49 @@
       </div>
 
       <div class="formulaire" id="form">
-          <form>
-              <h2>Prénom *</h2>
-              <input type="text" placeholder="Prénom" required>
+          <p>
+              Si vous souhaitez participer à l'une de nos dégustations inscrivez-vous en remplissant le rapide formulaire ce-dessous :
+          </p>
+            <div id="formImgInput">
+              <img src="media/glass.PNG" alt="verreDavids">
+              <form>
+                  <h2>Prénom *</h2>
+                  <input type="text" placeholder="Prénom" required>
 
-              <h2>Nom *</h2>
-              <input type="text" placeholder="Nom" required>
+                  <h2>Nom *</h2>
+                  <input type="text" placeholder="Nom" required>
 
-              <h2>Adresse E-mail *</h2>
-              <input type="text" placeholder="E-mail" required>
+                  <h2>Adresse E-mail *</h2>
+                  <input type="text" placeholder="E-mail" required>
 
-              <h2>Téléphone</h2>
-              <input type="text" placeholder="Téléphone">
+                  <h2>Lieu de dégustation *</h2>
+                  <select name="lieu" id="combobox" required>
+                      <option>Lieu de dégustation</option>
+                      <option>AMAP les Grand’Goules</option>
+                      <option>AMAP Bio des 2 rives</option>
+                      <option>Amap des Voiliers</option>
+                      <option>Le Pompin'Ambour</option>
+                      <option>AMAP BIO’RILLAC</option>
+                      <option>AMAP</option>
+                      <option>Pensees Bio</option>
+                      <option>Bio & Sens Montpellier - Juvignac</option>
+                      <option>Biossetan</option>
+                      <option>La Canopée </option>
+                      <option>Naturéo </option>
+                      <option>Rayons Verts</option>
+                      <option>BIOMONDE</option>
+                      <option>Bio c' Bon</option>
+                      <option>Les Comptoirs de la Bio</option>
+                  </select>
 
-              <h2>Lieu de dégustation *</h2>
-              <select name="lieu" id="combobox" required>
-                  <option>Lieu de dégustation</option>
-                  <option>AMAP les Grand’Goules</option>
-                  <option>AMAP Bio des 2 rives</option>
-                  <option>Amap des Voiliers</option>
-                  <option>Le Pompin'Ambour</option>
-                  <option>AMAP BIO’RILLAC</option>
-                  <option>AMAP</option>
-                  <option>Pensees Bio</option>
-                  <option>Bio & Sens Montpellier - Juvignac</option>
-                  <option>Biossetan</option>
-                  <option>La Canopée </option>
-                  <option>Naturéo </option>
-                  <option>Rayons Verts</option>
-                  <option>BIOMONDE</option>
-                  <option>Bio c' Bon</option>
-                  <option>Les Comptoirs de la Bio</option>
-              </select>
-              <div>
-                  <input type="submit" value="S'inscire">
-              </div>
-          </form>
+                  <h2>Téléphone</h2>
+                  <input type="text" placeholder="Téléphone">
+
+                  <div>
+                      <input type="submit" value="S'inscire" id="boutton">
+                  </div>
+              </form>
+            </div>
       </div>
 
       <footer>
