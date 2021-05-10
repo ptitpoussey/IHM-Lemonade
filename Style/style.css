@@ -34,8 +34,6 @@ select{
 }
 
 body {
-    width: 100%;
-    height: 100%;
 	background-image: url("../media/imageObligatoire.png");
 }
 
@@ -441,3 +439,38 @@ footer .secondpart ul#menu li a{
 footer .secondpart ul#menu li a:hover{
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 768px) {
+
+	.articles{
+		margin: 5%;
+		width: 90%;
+	}
+
+	.articles p{
+		font-size: 100%;
+	}
+
+	.map p{
+		font-size: 100%;
+		width: 50%;
+	}
+
+	.formulaire p{
+		font-size: 100%;
+		width: 90%;
+	}
+
+	.footer{
+		width: 100%;
+	}
+
+	.centerfooter{
+		margin: 0%;
+	}
+	.secondpart{
+		width: 20%;
+		margin-left: 0%;
+	}
+}
+
