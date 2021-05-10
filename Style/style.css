@@ -12,10 +12,13 @@
 
 /*Custom CSS*/
 
-*{
+@font-face{
 	font-family: 'lemonade_font';
-	src: url('/Style/lemonade_font.ttf');
-	font-size: 18px;
+	src: url("lemonade_font.ttf");
+}
+
+p{
+	font-family: 'lemonade_font';
 }
 
 body {
@@ -73,7 +76,7 @@ body {
 
 #slider img {
 	position: absolute;
-	width: 1200px;
+	width: 65%;
 	height: 12rem;
 	overflow: hidden;
 	object-fit: cover;
@@ -231,6 +234,10 @@ body {
 	width: 70%;
 }
 
+.articles p{
+	font-size: 150%;
+}
+
 .article1{
 	margin: auto;
 	display: flex;
@@ -241,6 +248,8 @@ body {
 
 .article1 img {
 	margin-left: 10%;
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
 	width: 30%;
 	height: 30%;
 	border-radius: 2%;
@@ -251,12 +260,6 @@ body {
 	padding-left: 1.5%;
 }
 
-.article2{
-	margin: auto;
-	flex-direction: row;
-	background-color: hsla(36, 100%, 50%, 0.3);
-
-}
 
 .article2{
 	margin: auto;
@@ -267,7 +270,9 @@ body {
 }
 
 .article2 img {
-	margin-left: 10%;
+	margin-left: 1.5%;
+	margin-bottom: 1.5%;
+	margin-top: 1.5%;
 	width: 30%;
 	height: 30%;
 	border-radius: 2%;
@@ -279,16 +284,32 @@ body {
 
 }
 
+.separat{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 2%;
+}
+
 .map{
 	text-align: center;
-	margin: 2em 2em 2em 2em;
+	margin: 2%;
+}
+
+.map p{
+	font-size: 150%;
+}
+
+hr{
+	border: 1px black solid;
+	margin: 5%;
 }
 
 footer hr{
-	border: 1px black solid;
-	margin-right: 5em;
-	margin-left: 5em;
+	margin-right: 5%;
+	margin-left: 5%;
 }
+
+
 
 .footer img{
 	width: 30px;
