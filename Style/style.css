@@ -313,13 +313,14 @@ body {
 
 hr{
 	border: 1px black solid;
-	margin: 5%;
+	margin: 1%;
 }
 
 .formulaire{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-bottom: 5%;
 
 }
 
@@ -332,7 +333,7 @@ hr{
 
 form{
 	width: 25%;
-	margin-left: 5%
+	margin-left: 5%;
 }
 
 #formImgInput{
@@ -370,7 +371,7 @@ footer hr{
 }
 
 .footer{
-	font-size: 13px;
+	font-size: 18px;
 	margin-right: 10em;
 	margin-left: 10em;
 	justify-items: center;
@@ -392,15 +393,17 @@ footer .secondpart ul#menu li{
     padding-right: 2em;
 }
 
-footer .secondpart .centerfooter > img#t{
-	width: 22px;
-	height: 22px;
+footer .secondpart .centerfooter > img{
+	width: 30px;
+	height: 30px;
 	margin-right: 3em;
+	transform: translateY(0px);
+	transition: 0.5s all;
 }
 
 footer .secondpart .centerfooter > img#img2{
-	width: 30px;
-	height: 33px;
+	width: 40px;
+	height: 40px;
 }
 
 footer .secondpart .centerfooter{
@@ -408,18 +411,13 @@ footer .secondpart .centerfooter{
     justify-content: center;
     margin-top: 1em;
     margin-left: 4em;
-    margin-right: 28em;
+    margin-right: 40em;
 }
 
-footer .secondpart .centerfooter > img#t:hover{
+footer .secondpart .centerfooter > img:hover{
 	width: 30px;
 	height: 30px;
-    box-shadow: 0 0 5px 0.2px;
-}
-footer .secondpart .centerfooter > img#img2:hover{
-	width: 42px;
-	height: 35px;
-	box-shadow: 0 0 5px 0.2px;
+	transform: translateY(-20px);
 }
 footer .secondpart .centerfooter > a {
     color: #70757a;
